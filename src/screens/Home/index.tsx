@@ -1,12 +1,11 @@
-import * as React from 'react'
-import { Text, SafeAreaView } from 'react-native'
-
-// import { Container } from './styles';
+import React from 'react'
+import { SafeAreaView } from 'react-native'
+import CardPerson from '../../components/CardPerson'
 
 function Home (): JSX.Element {
   return (
     <SafeAreaView>
-      <Text>HOME</Text>
+      <CardPerson />
     </SafeAreaView>
   )
 }
