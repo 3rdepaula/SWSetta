@@ -22,18 +22,25 @@
     "react-native-reanimated": "~1.13.0",
     "react-native-safe-area-context": "3.1.9",
     "react-native-screens": "~2.15.2",
-    "react-native-web": "~0.13.12"
+    "react-native-web": "~0.13.12",
+    "standard": "^16.0.3",
+    "ts-standard": "^10.0.0"
+  },
+  "ts-standard": {
+    "project": "./tsconfig.json",
+    "ignore": [
+      "dist",
+      "src/**/*.js"
+    ]
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@commitlint/cli": "11.0.0",
     "@commitlint/config-conventional": "11.0.0",
-    "@types/react": "~16.9.35",
     "@types/react-dom": "~16.9.8",
     "@types/react-native": "~0.63.2",
     "husky": "4.3.8",
     "lint-staged": "10.5.3",
-    "standard": "16.0.3",
     "typescript": "~4.0.0"
   },
   "private": true
