@@ -14,7 +14,7 @@ function Home (): JSX.Element {
       } else {
         setTimeout(function () {
           setTime(true)
-        }, 5000)
+        }, 45000)
       }
     })
   }
