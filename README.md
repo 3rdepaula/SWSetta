@@ -12,7 +12,6 @@ Coloque este comando no terminal
 - Utilizar React Native (utilizei TypeScript também) para desenvolver o aplicativo.
 - Consumir a API do Star Wars para listar os dados.
 - Mostrei 3 informação na página de detalhes Nome, Altura e Peso.
-- O desafio foi entregue em 2 dias.
 
 ## Bonus Points!
 
