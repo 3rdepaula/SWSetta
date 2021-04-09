@@ -3,9 +3,9 @@ import { FlatList, SafeAreaView, View, Text, ListRenderItem, ActivityIndicator, 
 import { useNavigation } from '@react-navigation/native'
 import { RectButton } from 'react-native-gesture-handler'
 
-import { PersonStarWarsProps, Result } from '../../types/person.type'
+import { Result } from '../../types/person.type'
+import { getPerson } from '../../requests/getPerson'
 
-import api from '../../service/api'
 import styles from './styles'
 import InputSearch from '../InputSearch'
 
@@ -42,8 +42,8 @@ function PersonCardMain (): JSX.Element {
 
     setIsLoadingList(true)
 
-    api.get<PersonStarWarsProps>(`people/?page=${page}`).then((response) => {
-      const listPerson = response.data.results
+    getPerson(page).then((response) => {
+      const listPerson: Result[] = response.data.results
       const isNextPage = response.data.next !== null
       const joinArrays = [...data, ...listPerson]
 
